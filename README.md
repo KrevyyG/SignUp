@@ -16,12 +16,12 @@ Validações:
 - Senha -> mínimo de 8 caracteres, 1 letra maiúscula, 1 caractere especial e a confirmação de senha deve ser igual a senha
 
 Componentes:
-Dark mode/Light mode
-Logo referenciado à este perfil do github
-Ícone de exibição/ocultação de senha nos campos "Senha" e "Confirmação de Senha"
-Validações reativas que evidenciam regras atendidas/não atendidas dependendo da senha utilizada
-Botão "Sign Up" que realiza o submit do formulário
-Logo do Cypress referenciado à página official do framework
+- Dark mode/Light mode
+- Logo referenciado à este perfil do github
+- Ícone de exibição/ocultação de senha nos campos "Senha" e "Confirmação de Senha"
+- Validações reativas que evidenciam regras atendidas/não atendidas dependendo da senha utilizada
+- Botão "Sign Up" que realiza o submit do formulário
+- Logo do Cypress referenciado à página official do framework
 
 ## Casos de Teste
 
