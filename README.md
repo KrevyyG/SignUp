@@ -25,114 +25,114 @@ Componentes:
 
 ## Casos de Teste
 
-**Como** um usuário
-**Eu** quero realizar o cadastro no sistema
-**Para** ter acesso ao sistema
+**Como** um usuário<br>
+**Eu** quero realizar o cadastro no sistema<br>
+**Para** ter acesso ao sistema<br>
 
-**Cenário 1: Realizar cadastro com sucesso passando um email com ".com"**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"
-E digitar no campo "Senha" o seguinte valor: "Teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então deve ser exibido um alert com a mensagem de Sucesso
-E os textos de validação de senha devem ficar verdes
+**Cenário 1: Realizar cadastro com sucesso passando um email com ".com"**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"<br>
+E digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um alert com a mensagem de Sucesso<br>
+E os textos de validação de senha devem ficar verdes<br>
 
-**Cenário 2: Realizar cadastro com sucesso passando um email com ".com.br"**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste@teste.com.br"
-E digitar no campo "Senha" o seguinte valor: "Teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então deve ser exibido um alert com a mensagem de Sucesso
-E os textos de validação de senha devem ficar verdes
+**Cenário 2: Realizar cadastro com sucesso passando um email com ".com.br"**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste@teste.com.br"<br>
+E digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um alert com a mensagem de Sucesso<br>
+E os textos de validação de senha devem ficar verdes<br>
 
-**Cenário 3: Realizar cadastro passando um email sem "@"**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste.com"
-E digitar no campo "Senha" o seguinte valor: "Teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então deve ser exibido um erro criticando a falta do @ no campo email logo abaixo do campo "Email"
+**Cenário 3: Realizar cadastro passando um email sem "@"**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste.com"<br>
+E digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um erro criticando a falta do @ no campo email logo abaixo do campo "Email"<br>
 
-**Cenário 4: Realizar cadastro sem passar um email**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Senha" o seguinte valor: "Teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então deve ser exibido um erro criticando a falta de um email no campo "Email"
+**Cenário 4: Realizar cadastro sem passar um email**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um erro criticando a falta de um email no campo "Email"<br>
 
-**Cenário 5: Realizar cadastro sem passar a senha**
-Dado que acessei a página do sistema em questão
-Quando Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então deve ser exibido um erro criticando a falta de uma senha no campo "Senha"
+**Cenário 5: Realizar cadastro sem passar a senha**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um erro criticando a falta de uma senha no campo "Senha"<br>
 
-**Cenário 6: Realizar cadastro sem passar a confirmação de senha**
-Dado que acessei a página do sistema em questão
-Quando Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"
-E digitar no campo "Senha" o seguinte valor: "Teste@123"
-E clicar no botão "Sign Up"
-Então deve ser exibido um erro criticando a falta de uma senha no campo "Confirmação de Senha"
+**Cenário 6: Realizar cadastro sem passar a confirmação de senha**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"<br>
+E digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um erro criticando a falta de uma senha no campo "Confirmação de Senha"<br>
 
-**Cenário 7: Realizar cadastro passando um email sem ".com" ou ".com.br"**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste@teste"
-E digitar no campo "Senha" o seguinte valor: "Teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então deve ser exibido um erro criticando a falta do ".com" ou ".com.br"
+**Cenário 7: Realizar cadastro passando um email sem ".com" ou ".com.br"**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste@teste"<br>
+E digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então deve ser exibido um erro criticando a falta do ".com" ou ".com.br"<br>
 
-**Cenário 8: Realizar cadastro passando uma senha menor que 8 caracteres**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"
-E digitar no campo "Senha" o seguinte valor: "Senh@"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então a validação de 8 caracteres deve ficar em vermelho enquanto as outras devem ficar em verde
+**Cenário 8: Realizar cadastro passando uma senha menor que 8 caracteres**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"<br>
+E digitar no campo "Senha" o seguinte valor: "Senh@"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então a validação de 8 caracteres deve ficar em vermelho enquanto as outras devem ficar em verde<br>
 
-**Cenário 9: Realizar cadastro passando uma senha sem uma letra maiúscula**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"
-E digitar no campo "Senha" o seguinte valor: "teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então a validação de letra maiúscula deve ficar em vermelho enquanto as outras devem ficar em verde
+**Cenário 9: Realizar cadastro passando uma senha sem uma letra maiúscula**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"<br>
+E digitar no campo "Senha" o seguinte valor: "teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então a validação de letra maiúscula deve ficar em vermelho enquanto as outras devem ficar em verde<br>
 
-**Cenário 10: Realizar cadastro passando uma senha sem um caractere especial**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"
-E digitar no campo "Senha" o seguinte valor: "Teste123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar no botão "Sign Up"
-Então a validação de caractere especial deve ficar em vermelho enquanto as outras devem ficar em verde
+**Cenário 10: Realizar cadastro passando uma senha sem um caractere especial**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Email" o seguinte valor: "teste@teste.com"<br>
+E digitar no campo "Senha" o seguinte valor: "Teste123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar no botão "Sign Up"<br>
+Então a validação de caractere especial deve ficar em vermelho enquanto as outras devem ficar em verde<br>
 
-**Cenário 11: Verificar funcionamento dos ícones de exibição/ocultação de senha**
-Dado que acessei a página do sistema em questão
-Quando digitar no campo "Senha" o seguinte valor: "Teste@123"
-E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"
-E clicar nos dois ícones para exibir as senhas
-E em seguida clicar novamente nos dois ícones para ocultar as senhas
-Então no primeiro clique as senhas devem se tornar visíveis
-E no segundo clique as senhas devem se tornar ocultas
+**Cenário 11: Verificar funcionamento dos ícones de exibição/ocultação de senha**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando digitar no campo "Senha" o seguinte valor: "Teste@123"<br>
+E digitar o mesmo valor de "Senha" no campo "Confirmação de Senha"<br>
+E clicar nos dois ícones para exibir as senhas<br>
+E em seguida clicar novamente nos dois ícones para ocultar as senhas<br>
+Então no primeiro clique as senhas devem se tornar visíveis<br>
+E no segundo clique as senhas devem se tornar ocultas<br>
 
-**Cenário 12: Verificar referencia ao logo principal**
-Dado que acessei a página do sistema em questão
-Quando eu clicar no logo principal
-Então devo ser redirecionado para o GitHub
+**Cenário 12: Verificar referencia ao logo principal**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando eu clicar no logo principal<br>
+Então devo ser redirecionado para o GitHub<br>
 
-**Cenário 13: Verificar referencia ao logo do Cypress**
-Dado que acessei a página do sistema em questão
-Quando eu clicar no logo do cypress
-Então devo ser redirecionado para a página oficial do cypress
+**Cenário 13: Verificar referencia ao logo do Cypress**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando eu clicar no logo do cypress<br>
+Então devo ser redirecionado para a página oficial do cypress<br>
 
-**Cenário 14: Verificar funcionamento do dark/light mode**
-Dado que acessei a página do sistema em questão
-Quando eu clicar no ícone de Lua
-E em seguida clicar no ícone de Sol
-Então no primeiro clique o sistema deve mudar as cores para cores mais escuras
-E no segundo clique o sistema deve mudar as cores para cores mais claras
+**Cenário 14: Verificar funcionamento do dark/light mode**<br>
+Dado que acessei a página do sistema em questão<br>
+Quando eu clicar no ícone de Lua<br>
+E em seguida clicar no ícone de Sol<br>
+Então no primeiro clique o sistema deve mudar as cores para cores mais escuras<br>
+E no segundo clique o sistema deve mudar as cores para cores mais claras<br>
 
 
 By [Guilherme Oliveira Souza](https://github.com/KrevyyG).
