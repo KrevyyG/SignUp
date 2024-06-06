@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" qa-datatest="container">
+        <span id="darkModeToggle" onclick="toggleDarkMode()" qa-datatest="darkModeToggle">
+            <img id="darkModeIcon" src="./img/moon_icon.png" alt="Toggle Dark Mode"
+                style="cursor: pointer; width: 24px; height: 24px;" qa-datatest="darkModeIcon">
+        </span>
+        <header qa-datatest="header">
+            <img src="./img/kg.png" alt="KrevyyG Logo" onclick="window.location.href='https://github.com/KrevyyG'"
+                style="cursor: pointer;" qa-datatest="logo">
+            <h1 qa-datatest="title">Cadastro</h1>
+        </header>
+        <form id="signupForm" qa-datatest="signupForm">
+            <div class="form-group" qa-datatest="formGroup-email">
+                <label for="email" qa-datatest="label-email">Email:</label>
+                <input type="email" id="email" name="email" required qa-datatest="input-email">
+                <span id="emailError" class="error-message" qa-datatest="error-email"></span>
+            </div>
+            <div class="form-group" qa-datatest="formGroup-password">
+                <label for="password" qa-datatest="label-password">Senha:</label>
+                <div class="password-container" qa-datatest="passwordContainer">
+                    <input type="password" id="password" name="password" required qa-datatest="input-password">
+                    <span class="toggle-password" onclick="togglePassword('password')"
+                        qa-datatest="togglePassword-password">&#128065;</span>
+                </div>
+            </div>
+            <div class="form-group" qa-datatest="formGroup-confirmPassword">
+                <label for="confirmPassword" qa-datatest="label-confirmPassword">Confirme a Senha:</label>
+                <div class="password-container" qa-datatest="passwordContainer-confirmPassword">
+                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                        qa-datatest="input-confirmPassword">
+                    <span class="toggle-password" onclick="togglePassword('confirmPassword')"
+                        qa-datatest="togglePassword-confirmPassword">&#128065;</span>
+                </div>
+                <ul id="passwordRules" qa-datatest="passwordRules">
+                    <li qa-datatest="passwordRule-minLength">Mínimo de 8 caracteres</li>
+                    <li qa-datatest="passwordRule-uppercase">1 letra maiúscula</li>
+                    <li qa-datatest="passwordRule-specialChar">1 caractere especial</li>
+                    <li qa-datatest="passwordRule-match">As senhas devem ser iguais</li>
+                </ul>
+                <span id="confirmPasswordError" class="error-message" qa-datatest="error-confirmPassword"></span>
+            </div>
+            <button type="submit" qa-datatest="signup-button">Sign Up</button>
+        </form>
+    </div>
+    <div class="logo-container" qa-datatest="logoContainer">
+        <img src="./img/cypress-icon.png" alt="Cypress Logo" onclick="window.location.href='https://www.cypress.io/'"
+            style="cursor: pointer;" qa-datatest="cypressLogo">
+    </div>
+    <script src="script.js" qa-datatest="script"></script>
+</body>
+
+</html>
