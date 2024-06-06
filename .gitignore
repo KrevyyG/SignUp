@@ -1,0 +1,5 @@
+.DS_Store
+Cypress/cypress/screenshots/
+Cypress/cypress/videos/
+Cypress/node_modules/
+Cypress/cypress.config.js
